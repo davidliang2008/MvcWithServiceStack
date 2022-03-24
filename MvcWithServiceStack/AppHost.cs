@@ -1,4 +1,5 @@
 ﻿using Funq;
+using MvcWithServiceStack.ServiceInterface;
 using ServiceStack;
 using ServiceStack.Mvc;
 using System.Web.Mvc;
@@ -7,7 +8,7 @@ namespace MvcWithServiceStack
 {
     public class AppHost : AppHostBase
     {
-        public AppHost() : base("MvcWithServiceStack", typeof(AppHost).Assembly)
+        public AppHost() : base("MvcWithServiceStack", typeof(ServiceBase).Assembly)
         {
         }
 
